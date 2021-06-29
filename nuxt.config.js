@@ -3,7 +3,7 @@ export default {
   head: {
     title: 'gmail-clone',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'tr'
     },
     meta: [
       { charset: 'utf-8' },
@@ -17,10 +17,14 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    { src: 'vue-material/dist/vue-material.min.css', lang: 'css' },
+    '@/assets/bootstrap-grid.min.css',
+    // '@/assets/bootstrap-grid.min.scss'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    { src: '~/plugins/vue-material' },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -36,5 +40,7 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+     vendor: ['vue-material'],
+     
   }
 }

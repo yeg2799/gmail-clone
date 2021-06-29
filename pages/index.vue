@@ -1,19 +1,23 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        gmail-clone
-      </h1>
-    </div>
+  <div class="d-flex">
+      <div class="col-2">
+        <Menu/>
+      </div>
+      <div class="col-10">
+        <Content/>
+      </div>  
+      
   </div>
 </template>
 
 <script>
-export default {}
+import Content from '../components/Content.vue'
+import Menu from '../components/Menu.vue'
+export default {
+  components: { Menu, Content }}
 </script>
 
-<style>
+<style lang="scss" scoped>
 .container {
   margin: 0 auto;
   min-height: 100vh;
