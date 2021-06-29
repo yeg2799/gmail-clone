@@ -32,12 +32,16 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    '@nuxtjs/svg',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/svg-sprite',
   ],
-
+  svgSprite: {
+    input: '~/assets/icons/',
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
      vendor: ['vue-material'],
