@@ -1,35 +1,35 @@
 <template>
  <div class="d-flex justify-content-between header ">
      <div class="left d-flex align-items-center">
-    <div class="hamburger-icon d-flex icons">
-         <svg-sprite icon="menu-hamburger"/>
-     </div>
-     <div class="d-flex logo-image">
-         <img src="@/assets/image/logo.png"/>
-     </div>
-    <div class="d-flex search-input" >
-        <div class="icons">
-            <svg-sprite icon="search"/>
+        <div class="hamburger-icon d-flex icons">
+            <svg-sprite icon="menu-hamburger"/>
         </div>
-         <input type="text" class="search" placeholder="Postalarda Arayın"/>
-        <div class="icons tune">
-            <svg-sprite icon="tune-settings"/>
+        <div class="d-flex logo-image">
+            <img src="@/assets/image/logo.png"/>
         </div>
-     </div>
+        <div class="d-flex search-input" >
+            <div class="icons">
+                <svg-sprite icon="search"/>
+            </div>
+            <input type="text" class="search" placeholder="Postalarda Arayın"/>
+            <div class="icons tune">
+                <svg-sprite icon="tune-settings"/>
+            </div>
+         </div>
      </div>
     <div class="right d-flex align-items-center">
-    <div class="d-flex icons settings-icon">
+        <div class="d-flex icons settings-icon">
           <svg-sprite icon="support"/>
-     </div>
-     <div class="d-flex icons settings-icon">
-         <svg-sprite icon="settings"/>
-     </div>
-    <div class="d-flex icons settings-icon">
-         <svg-sprite icon="applications"/>
-     </div>
-    <div class="separator">
-         <md-avatar class="md-avatar-icon avatar">E</md-avatar>
-     </div>
+        </div>
+        <div class="d-flex icons settings-icon">
+            <svg-sprite icon="settings"/>
+         </div>
+        <div class="d-flex icons settings-icon">
+            <svg-sprite icon="applications"/>
+        </div>
+        <div class="separator">
+            <md-avatar class="md-avatar-icon avatar">E</md-avatar>
+        </div>
      </div>
   </div>
 </template>

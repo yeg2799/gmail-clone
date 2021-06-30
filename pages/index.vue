@@ -1,9 +1,9 @@
 <template>
   <div class="d-flex">
-      <div class="col-2">
+      <div class="part-menu">
         <Menu/>
       </div>
-      <div class="col-10">
+      <div class="part-content">
         <Content/>
       </div>  
       
@@ -18,5 +18,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.part-menu{
+  width: 13%;
+}
+.part-content{
+  width: 87%;
+}
 </style>
