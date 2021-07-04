@@ -1,12 +1,13 @@
 <template>
   <div class="menu">
       <div class="create-message__button">
-
         <span class="create">Oluştur</span>
       </div>
-      <div class="menu-list__item d-flex align-items-center"  v-for="menu in menus" :key="menu.id" :class="{'active':menu.active,'notactive':!menu.active}">
-        <svg-sprite :icon="menu.icon"/>
-        <span class="menu-title">{{menu.title}}</span>
+      <div   v-for="menu in menus" :key="menu.id" >
+        <nuxt-link :to="menu.slug" class="menu-list__item d-flex align-items-center" :class="{'active':menu.active,'notactive':!menu.active}"> 
+            <svg-sprite :icon="menu.icon"/>
+            <span class="menu-title">{{menu.title}}</span>
+        </nuxt-link>
       </div>
   </div>
 </template>
@@ -20,36 +21,42 @@ export default {
           id:1,
           icon:'inbox',
           title:'Gelen Kutusu',
+          slug:'inbox',
           active:true
         },
         {
           id:2,
           icon:'star',
           title:'Yıldızlı',
+          slug:'star',
           active:false
         },
         {
           id:3,
           icon:'schedule',
           title:'Ertelenenler',
+          slug:'snoozed',
           active:false
         },
         {
           id:4,
           icon:'near',
           title:'Gönderilmiş Postalar',
+          slug:'sent',
           active:false
         },
         {
           id:5,
           icon:'task',
           title:'Taslaklar',
+          slug:'tasks',
           active:false
         },
         {
           id:6,
           icon:'down',
           title:'Diğer',
+          slug:'others',
           active:false
         }
       ]
@@ -97,6 +104,10 @@ export default {
   .menu-list__item{
     padding: 10px 20px;
     cursor: pointer;
+    
+    &:hover{
+      text-decoration: none;
+    }
     .icon{
       margin-right: 20px;
     }

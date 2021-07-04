@@ -34,7 +34,7 @@
 </template>
 
 <script>
-import MessageBox from './MessageBox.vue'
+import MessageBox from '../../components/MessageBox.vue'
 
 
 export default {
@@ -78,12 +78,13 @@ export default {
   svg{
     width: 20px;
     height: 20px;
+    fill: #474747;
   }
 }
 .checkbox{
         width: 18px;
         height: 18px;
-        border: 1px solid black;
+        border: 1px solid #474747;;
         display: flex;
         align-items: center;
   }

@@ -1,7 +1,17 @@
 <template>
   <div>
     <Header/> 
-    <Nuxt />
+    <div class="d-flex">
+    <div class="part-menu">
+        <Menu/>
+    </div>
+    <div class="part-content">
+      <Nuxt />
+    </div>
+    </div>
+
+    
+    
   </div>
 </template>
 <script>
@@ -68,5 +78,11 @@ html {
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
+}
+.part-menu{
+  width: 13%;
+}
+.part-content{
+  width: 87%;
 }
 </style>

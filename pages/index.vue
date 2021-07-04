@@ -1,20 +1,13 @@
 <template>
   <div class="d-flex">
-      <div class="part-menu">
-        <Menu/>
-      </div>
-      <div class="part-content">
-        <Content/>
-      </div>  
-      
+          
   </div>
 </template>
 
 <script>
-import Content from '../components/Content.vue'
 import Menu from '../components/Menu.vue'
 export default {
-  components: { Menu, Content }}
+  components: { Menu }}
 </script>
 
 <style lang="scss" scoped>
