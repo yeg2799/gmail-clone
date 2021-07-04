@@ -102,7 +102,7 @@ export default {
     }
   }
   .menu-list__item{
-    padding: 10px 20px;
+    padding: 5px 20px;
     cursor: pointer;
     
     &:hover{

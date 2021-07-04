@@ -2,9 +2,9 @@
     <div class="content-detail">
         <div class="content-detail-top d-flex justify-content-between align-items-center p-3">
             <div class="detail-top-left d-flex">
-                <div class="icon">
+                <nuxt-link to="/inbox" class="icon arrowback">
                      <svg-sprite icon="arrowback" />
-                </div>
+                </nuxt-link>
                 <div class="icon archive-icon">
                     <svg-sprite icon="archive"/>
                 </div>
@@ -50,6 +50,28 @@
                 </div>
             </div>
         </div>
+        <div class="content-detail-bottom">
+            <div class="content-detail-title d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center left">
+                    <h2>Redmi Note 10 5G alana Mi True Wireless Earphone 2 Basic hediye!</h2>
+                    <div class="icon">
+                        <svg-sprite icon="spam" />
+                    </div>
+                    <div class="delete-badge d-flex align-items-center">
+                        <span class="inbox">Gelen Kutusu</span>
+                        <span class="delete">x</span>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center right">
+                    <div class="icon">
+                        <svg-sprite icon="printer"/>
+                    </div>
+                    <div class="icon">
+                        <svg-sprite icon="spam" />
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -65,9 +87,7 @@ export default {
 }
 .icon{
     fill: #5F6368;
-    &:first-child{
-        margin-right: 10px;
-    }
+    display: flex;
     svg{
         width: 43px;
         height: 43px;
@@ -80,5 +100,39 @@ export default {
         }
     }
 }
-
+.content-detail-bottom{
+    .left{
+        margin-left: 80px;
+    }
+    .right{
+        margin-right: 15px;
+    }
+}
+.arrowback{
+    margin-right: 10px;
+}
+.delete-badge{
+        background-color: rgb(221, 221, 221);
+        color: rgb(102, 102, 102);
+        border-radius: 5px;
+        cursor: pointer;
+        .inbox{
+            padding: 0px 3px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            &:hover{
+                background-color: #666666;
+                color: #fff;
+            }
+        }
+        .delete{
+            padding: 0px 3px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            &:hover{
+                background-color: #666666;
+                color: #fff;
+            }
+        }
+}
 </style>
