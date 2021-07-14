@@ -27,7 +27,7 @@
           </div>
         </div>
       </div>
-      <div class="content-bottom" v-for="n in 20" :key="n">
+      <div class="content-bottom" v-for="n in 17" :key="n">
         <MessageBox />
       </div>
   </div>
