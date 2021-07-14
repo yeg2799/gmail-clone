@@ -7,6 +7,7 @@
     </div>
     <div class="part-content">
       <Nuxt />
+      <SendMessage/>
     </div>
     </div>
 
@@ -16,10 +17,12 @@
 </template>
 <script>
 import Header from '@/components/Header.vue'
+import SendMessage from '../components/SendMessage.vue'
 
 export default {
   components:{
     Header,
+    SendMessage,
   }
 }
 </script>

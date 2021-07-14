@@ -1,6 +1,6 @@
 <template>
     <div class="content-detail">
-        <div class="content-detail-top d-flex justify-content-between align-items-center p-3">
+        <div class="content-detail-top d-flex justify-content-between align-items-center">
             <div class="detail-top-left d-flex">
                 <nuxt-link to="/inbox" class="icon arrowback">
                      <svg-sprite icon="arrowback" />
@@ -53,9 +53,9 @@
         <div class="content-detail-bottom">
             <div class="content-detail-title d-flex align-items-center justify-content-between">
                 <div class="d-flex align-items-center left">
-                    <h2>Redmi Note 10 5G alana Mi True Wireless Earphone 2 Basic hediye!</h2>
+                    <span class="detail-header">Redmi Note 10 5G alana Mi True Wireless Earphone 2 Basic hediye!</span>
                     <div class="icon">
-                        <svg-sprite icon="spam" />
+                        <svg-sprite icon="label" />
                     </div>
                     <div class="delete-badge d-flex align-items-center">
                         <span class="inbox">Gelen Kutusu</span>
@@ -71,6 +71,25 @@
                     </div>
                 </div>
             </div>
+            <div class="content-detail-message mt-4">
+                <div class="message-left">
+                    <div class="message-info d-flex align-items-center">
+                        <div class="avatar">
+                            <md-avatar class="md-avatar-icon">E</md-avatar>
+                        </div>
+                        <div class="title">
+                            <div class="top d-flex">
+                                <span>Hepsiburada</span>
+                                <span>merhaba@email.hepsiburada.com</span>
+                            </div>
+                            <div class="bottom d-flex">
+                                <span>Alıcı: ben</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 </template>
@@ -82,6 +101,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.md-avatar-icon{
+    background: #F0F0F0;
+}
+.content-detail{
+    padding: 5px 15px;
+}
 .content-detail-top{
     border-bottom: 1px solid #F1F3F4;
 }
@@ -89,8 +114,8 @@ export default {
     fill: #5F6368;
     display: flex;
     svg{
-        width: 43px;
-        height: 43px;
+        width: 40px;
+        height: 40px;
         border-radius: 50%;
         padding: 10px;
         cursor: pointer;
@@ -101,15 +126,20 @@ export default {
     }
 }
 .content-detail-bottom{
+    padding: 20px 0px;
     .left{
-        margin-left: 80px;
+        margin-left: 70px;
     }
-    .right{
-        margin-right: 15px;
+    .detail-header{
+        font-size: 20px;
+    }
+    .content-detail-message{
+         border-bottom: 1px solid #F1F3F4;
+         padding-bottom: 10px;
     }
 }
 .arrowback{
-    margin-right: 10px;
+    margin-right: 15px;
 }
 .delete-badge{
         background-color: rgb(221, 221, 221);

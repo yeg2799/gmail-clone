@@ -6,7 +6,7 @@
                 <svg-sprite icon="starempty" />
               </div>
               <div class="important icon">
-                <svg-sprite icon="importantempty" />
+                <svg-sprite icon="label" />
               </div>
               <div class="message-title">
                   <span>Hepsiburada</span>

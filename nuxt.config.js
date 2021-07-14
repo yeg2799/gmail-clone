@@ -2,7 +2,7 @@ import routers from './config/routes'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'gmail-clone',
+    title: 'Gmail',
     htmlAttrs: {
       lang: 'tr'
     },

@@ -117,7 +117,7 @@ export default {
   }
   .active{
     background-color: #fce8e6;
-    width: 90%;
+    width: 95%;
     border-top-right-radius:30px;
     border-bottom-right-radius:30px;
     .icon{
@@ -130,7 +130,7 @@ export default {
   .notactive{
       &:hover{
       background-color: #F1F3F4;
-      width: 90%;
+      width: 95%;
       border-top-right-radius:30px;
       border-bottom-right-radius:30px;
     }
